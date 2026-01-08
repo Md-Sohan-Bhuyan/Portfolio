@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Md Sohan Bhuyan - Full Stack Developer, Web Developer, and Entrepreneur. Specializing in modern web technologies, mobile app development, and blockchain solutions.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, React, Node.js, MongoDB, Java, JavaScript, Portfolio">
+    <meta name="author" content="Md Sohan Bhuyan">
+    <title>Md Sohan Bhuyan - Full Stack Developer | Portfolio</title>
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
@@ -13,6 +16,10 @@
 </head>
 
 <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
 
     <!-- header -->
     <header class="active">
@@ -27,7 +34,32 @@
             <a href="#">Portfolio</a>
             <a href="#">Contact</a>
         </nav>
+
+        <!-- Header Right Section -->
+        <div class="header-right">
+            <!-- Live Clock in Navbar -->
+            <div class="live-clock-nav" id="live-clock">
+                <i class='bx bx-time-five'></i>
+                <span id="clock-time"></span>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" role="button" tabindex="0">
+                <i class='bx bx-sun' id="theme-icon"></i>
+            </div>
+        </div>
     </header>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Animated Background Particles -->
+    <div class="particles-container" id="particles-container"></div>
 
     <!-- bars background -->
     <div class="bars-box active">
@@ -50,17 +82,35 @@
                 <span style="--i:1" data-text="Content Creator">Content Creator</span>
             </h2>
             <p>
-                <p>
-                    passionate about crafting sleek, high-performance web solutions. I turn ideas into reality with clean code, smart design & business-driven strategies.
-                </p>
+                Passionate about crafting sleek, high-performance web solutions. I turn ideas into reality with clean code, smart design & business-driven strategies. With 2+ years of experience in full-stack development, I specialize in building scalable applications that solve real-world problems.
             </p>
+            
+            <!-- Stats Counter -->
+            <div class="home-stats">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class='bx bx-code-alt'></i></div>
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class='bx bx-briefcase-alt-2'></i></div>
+                    <h3 class="counter" data-target="2">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class='bx bx-happy-heart-eyes'></i></div>
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+
             <div class="btn-sci">
                 <a href="https://drive.google.com/file/d/1QJKahi5nld4Q-zz8gYHIldjRpwYUg8ET/view?usp=" download class="btn">Download CV</a>
                 <div class="sci">
-                    <a href="https://github.com/Md-Sohan-Bhuyan"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/sohan-bhuyan-930793315/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100081354446519"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/sohan-bhuyan-930793315/" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081354446519" target="_blank" title="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" title="YouTube"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
         </div>
@@ -68,7 +118,7 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="image/Home.jpg">
+                    <img src="image/Home.jpg" alt="Md Sohan Bhuyan - Full Stack Developer">
                 </div>
             </div>
         </div>
@@ -167,9 +217,12 @@ I integrate blockchain with modern web stacks to build Web3 solutions—connecti
         <div class="resume-container">
             <div class="resume-box">
                 <h2>Why Hire Me?</h2>
-                <p class="desc">I don’t just write code—I solve problems. I approach each project with a solution-oriented mindset, focusing on how technology can improve real user experiences and business outcomes.From front-end to back-end, UI/UX to SEO, and even blockchain—my diverse skill set allows me to adapt quickly, collaborate effectively, and contribute at every stage of a project.
+                <div class="desc-wrapper">
+                    <p class="desc">I don't just write code—I solve problems. I approach each project with a solution-oriented mindset, focusing on how technology can improve real user experiences and business outcomes.From front-end to back-end, UI/UX to SEO, and even blockchain—my diverse skill set allows me to adapt quickly, collaborate effectively, and contribute at every stage of a project.
 
-I’ve worked on practical, impact-driven projects such as e-voting systems, social service platforms, and dynamic dashboards. I know how to turn ideas into reliable, user-ready applications.I take deadlines seriously, communicate clearly, and always aim for quality. You won’t just get a developer—you’ll get a dependable team player.I believe in continuous learning and evolving with tech trends. Hiring me means bringing in someone who’s always curious, always improving, and genuinely passionate about what they do.</p>
+I've worked on practical, impact-driven projects such as e-voting systems, social service platforms, and dynamic dashboards. I know how to turn ideas into reliable, user-ready applications.I take deadlines seriously, communicate clearly, and always aim for quality. You won't just get a developer—you'll get a dependable team player.I believe in continuous learning and evolving with tech trends. Hiring me means bringing in someone who's always curious, always improving, and genuinely passionate about what they do.</p>
+                </div>
+                <button class="desc-toggle" id="desc-toggle">Read More <i class='bx bx-chevron-down'></i></button>
                 <button class="resume-btn active">Experience</button>
                 <button class="resume-btn">Education</button>
                 <button class="resume-btn">Skills</button>
@@ -266,38 +319,106 @@ Proficient in frontend and full-stack development, including HTML, CSS, JavaScri
 Skilled in building responsive, user-friendly applications with clean code and efficient functionality.
 </p>
 
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <i class='bx bxl-html5'></i>
-                            <span>HTML5</span>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-html5'></i>
+                                <span>HTML5</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-css3'></i>
-                            <span>CSS3</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-css3'></i>
+                                <span>CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-javascript'></i>
-                            <span>JavaScript</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-javascript'></i>
+                                <span>JavaScript</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-react'></i>
-                            <span>React.js</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-react'></i>
+                                <span>React.js</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-vuejs'></i>
-                            <span>Vue.js</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-vuejs'></i>
+                                <span>Vue.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-tailwind-css'></i>
-                            <span>Tailwind CSS</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-tailwind-css'></i>
+                                <span>Tailwind CSS</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-nodejs'></i>
-                            <span>Node.js</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-nodejs'></i>
+                                <span>Node.js</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxl-mongodb'></i>
-                            <span>MongoDB</span>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-mongodb'></i>
+                                <span>MongoDB</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-java'></i>
+                                <span>Java</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <i class='bx bxl-git'></i>
+                                <span>Git & GitHub</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,7 +438,7 @@ I enjoy solving real-world problems and continuously learning new technologies t
                             <p>Gender <span>Male</span></p>
                         </div>
                         <div class="resume-item">
-                            <p>Age <span>20 Years Old</span></p>
+                            <p>Age <span>23 Years Old</span></p>
                         </div>
                         <div class="resume-item">
                             <p>Status <span>Unmarried</span></p>
@@ -359,103 +480,97 @@ I enjoy solving real-world problems and continuously learning new technologies t
             <div class="portfolio-box">
                 <div class="portfolio-detail active">
                     <p class="numb">01</p>
-                    <h3>Frontend Project</h3>
+                    <h3>E-Voting System</h3>
 <p>
-Built responsive and interactive web interfaces using HTML, CSS, and JavaScript.  
-Focused on seamless user experience, visual consistency, and cross-browser compatibility.
+Developed a secure online voting platform with real-time vote counting and result visualization. Implemented user authentication, vote tracking, and admin dashboard for managing elections. Built with focus on security, transparency, and user-friendly interface.
 </p>
 
                     <div class="tech">
-                        <p>HTML5, CSS3, JavaScript</p>
+                        <p>HTML5, CSS3, JavaScript, Java, JSP, Oracle SQL</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">02</p>
-                    <h3>Full Stack Project</h3>
+                    <h3>Blood Donation Management System</h3>
 <p>
-Developed complete web applications by combining frontend design, backend logic, and database management.  
-Ensured efficient data flow, secure functionality, and real-world usability.
+Created a comprehensive platform connecting blood donors with recipients in real-time. Features include donor registration, blood request management, location-based search, and notification system. Ensured efficient data flow, secure functionality, and real-world usability for emergency situations.
 </p>
 
                     <div class="tech">
                         <p>MongoDB, Express.js, React.js, Node.js</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">03</p>
-                    <h3>Frontend Project</h3>
+                    <h3>Service Connector Platform</h3>
 <p>
-Created modern, responsive web interfaces with a strong focus on usability and visual consistency.  
-Implemented interactive features to enhance user experience and accessibility.
+Built a dynamic service marketplace connecting service providers with customers. Features include service listing, booking system, payment integration, and review ratings. Created modern, responsive interfaces with strong focus on usability, visual consistency, and real-time updates.
 </p>
 
                     <div class="tech">
-                        <p>React.js, Tailwind CSS</p>
+                        <p>React.js, Tailwind CSS, Node.js, MongoDB</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">04</p>
-                   <h3>Full Stack Project</h3>
+                   <h3>E-Health Management System</h3>
 <p>
-Built end-to-end web applications integrating frontend, backend, and database systems.  
-Emphasized performance, security, and scalable application architecture.
+Developed a comprehensive healthcare platform for managing patient records, appointments, and medical history. Features include doctor-patient communication, prescription management, and health analytics dashboard. Built with emphasis on performance, security, and scalable architecture for healthcare data.
 </p>
 
                     <div class="tech">
-                        <p>HTML5, Tailwind, JavaScript</p>
+                        <p>HTML5, Tailwind CSS, JavaScript, Node.js, MongoDB</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">05</p>
-                    <h3>Frontend Project</h3>
+                    <h3>Dynamic Dashboard Application</h3>
 <p>
-Designed responsive and user-friendly interfaces using HTML, CSS, and JavaScript.  
-Focused on clean UI design, smooth interactions, and cross-browser compatibility.
+Created an interactive admin dashboard with real-time data visualization, analytics, and reporting features. Implemented charts, graphs, and data tables with filtering and sorting capabilities. Designed responsive, user-friendly interfaces with clean UI, smooth interactions, and cross-browser compatibility.
 </p>
 
                     <div class="tech">
-                        <p>MongoDB, Express.js</p>
+                        <p>React.js, MongoDB, Express.js, Chart.js</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
 
                 <div class="portfolio-detail">
                     <p class="numb">06</p>
-                   <h3>Full Stack Project</h3>
+                   <h3>Social Service Platform</h3>
 <p>
-Developed complete full-stack applications using modern front-end and back-end technologies.  
-Focused on clean architecture, database integration, and real-world problem solving.
+Built a community-driven platform for connecting volunteers with social service opportunities. Features include event management, volunteer registration, donation tracking, and impact reporting. Developed using modern full-stack technologies with focus on clean architecture, database integration, and solving real-world social problems.
 </p>
 
                     <div class="tech">
-                        <p>Vue.js, Node.js, Express.js</p>
+                        <p>Vue.js, Node.js, Express.js, MongoDB</p>
                     </div>
                     <div class="live-github">
-                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                        <a href="#" target="_blank"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="https://github.com/Md-Sohan-Bhuyan" target="_blank"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                     </div>
                 </div>
             </div>
